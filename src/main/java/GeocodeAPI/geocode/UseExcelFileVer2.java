@@ -100,19 +100,19 @@ public class UseExcelFileVer2 {
 	public void writeLongLats(FullLocation location){
 		Row row = studentsSheet.createRow(rowIndex++);
 		int cellIndex = 0;
-		//first place in row is Company
+		//first place in row is Id
 		row.createCell(cellIndex++).setCellValue(location.getId());
-		//first place in row is Company
+		//Second place in row is Company
 		row.createCell(cellIndex++).setCellValue(location.getCompany());
-		//first place in row is Address
+		//Third place in row is Address
 		row.createCell(cellIndex++).setCellValue(location.getAddress());
-		//first place in row is City
+		//Forth place in row is City
 		row.createCell(cellIndex++).setCellValue(location.getCity());
-		//first place in row is State
+		//Fifth place in row is State
 		row.createCell(cellIndex++).setCellValue(location.getState());
-		//first place in row is Longitude
+		//Sixth place in row is Longitude
 		row.createCell(cellIndex++).setCellValue(location.getLongitude());
-		//second place in row is marks in Latitude
+		//Seventh place in row is marks in Latitude
 		row.createCell(cellIndex++).setCellValue(location.getLatitude());
 
 		//write this workbook in excel file.

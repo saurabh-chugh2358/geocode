@@ -86,13 +86,13 @@ public class UseExcelFile {
 	public void writeLongLats(Location location){
 		Row row = studentsSheet.createRow(rowIndex++);
 		int cellIndex = 1;
-		//first place in row is name
+		//first place in row is Zip Code
 		row.createCell(cellIndex++).setCellValue(location.getZipcode());
 
-		//first place in row is name
+		//Second place in row is Longitude
 		row.createCell(cellIndex++).setCellValue(location.getLongitude());
 
-		//second place in row is marks in maths
+		//second place in row is Latitude
 		row.createCell(cellIndex++).setCellValue(location.getLatitude());
 
 		//write this workbook in excel file.

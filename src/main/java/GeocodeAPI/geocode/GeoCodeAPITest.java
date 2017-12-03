@@ -9,10 +9,10 @@ public class GeoCodeAPITest {
 		// TODO Auto-generated method stub
 		GeoCodeAPIDemo longlats = new GeoCodeAPIDemo();
 	/*	UseExcelFile var1 = new UseExcelFile();
-		var1.setFILE_PATH("C:/Users/silcadmin/Downloads/VApopulation.xlsx");
+		var1.setFILE_PATH("VApopulation.xlsx");
 		List<Location> zipLocations= var1.readExcelFile();
 		
-		var1.setFILE_PATH("C:/Users/silcadmin/Downloads/testWriteStudents.xlsx");
+		var1.setFILE_PATH("testWriteStudents.xlsx");
 		Iterator<Location> itr1 = zipLocations.iterator();
 		while (itr1.hasNext()) {
 			Location location = (Location) itr1.next();
@@ -21,10 +21,10 @@ public class GeoCodeAPITest {
 		}*/
 		
 		UseExcelFileVer2 var2 = new UseExcelFileVer2();
-		var2.setFILE_PATH("C:/Users/silcadmin/Downloads/X/WV.xlsx");
+		var2.setFILE_PATH("X/WV.xlsx");
 		List<FullLocation> fullLocations= var2.readExcelFile();
 		
-		var2.setFILE_PATH("C:/Users/silcadmin/Downloads/X/WV_NEW.xlsx");
+		var2.setFILE_PATH("WV_NEW.xlsx");
 		Iterator<FullLocation> itr2 = fullLocations.iterator();
 		while (itr2.hasNext()) {
 			FullLocation fullLocation = (FullLocation) itr2.next();

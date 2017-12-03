@@ -11,9 +11,6 @@ public class GeoCodeAPIDemo {
 		String code = args;
 		String response = getLocation(code);
 		String[] result = parseLocation(response);
-		//System.out.println("ZipCode: " + args);
-		//System.out.println("Latitude: " + result[0]);
-		//System.out.println("Longitude: " + result[1]);
 		Location location = new Location();
 		location.setZipcode(args);
 		location.setLongitude(result[1]);
